@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+   
+let choice = parseInt(prompt("Enter the case number (1, 2, or 3):\n1) S = V x t\n2) V = S / t\n3) t = S / V"));
+
+
+if (choice === 1) {
+    let V = parseFloat(prompt("Enter the value of V:"));
+    let t = parseFloat(prompt("Enter the value of t:"));
+    let S = V * t;
+    document.write("S = " + S);
+} else if (choice === 2) {
+    let S = parseFloat(prompt("Enter the value of S:"));
+    let t = parseFloat(prompt("Enter the value of t:"));
+    let V = S / t;
+    document.write("V = " + V);
+} else if (choice === 3) {
+    let S = parseFloat(prompt("Enter the value of S:"));
+    let V = parseFloat(prompt("Enter the value of V:"));
+    let t = S / V;
+    document.write("t = " + t);
+} else {
+    document.write("Invalid choice. Please enter 1, 2, or 3.");
+}
+
+</script>
+
+
+
+
+</body>
+</html>
